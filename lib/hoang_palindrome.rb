@@ -12,6 +12,6 @@ class String
 
   private
     def content
-      self.chars.select {|char| char.match(/[a-z]/)}.join
+      self.chars.select {|char| char.match(/[a-z]/i)}.join
     end
 end

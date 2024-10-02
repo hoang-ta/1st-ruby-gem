@@ -12,6 +12,6 @@ class TestHoangPalindrome < Minitest::Test
   end
 
   def test_palindrome_with_punctuation
-    # assert "Madam, I'm Adam".palindrome?
+    assert "Madam, I'm Adam".palindrome?
   end
 end
