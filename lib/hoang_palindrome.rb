@@ -3,6 +3,15 @@
 require_relative "hoang_palindrome/version"
 
 module HoangPalindrome
-  class Error < StandardError; end
-  # Your code goes here...
+end
+
+class String
+  def palindrome?
+    content == content.reverse
+  end
+
+  private
+    def content
+      self.chars.select {|char| char.match(/[a-z]/)}.join
+    end
 end

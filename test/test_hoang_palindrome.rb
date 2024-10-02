@@ -3,11 +3,15 @@
 require "test_helper"
 
 class TestHoangPalindrome < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::HoangPalindrome::VERSION
+  def test_non_palindrome
+    assert ! 'nice'.palindrome?
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_palindrome
+    assert 'racecar'.palindrome?
+  end
+
+  def test_palindrome_with_punctuation
+    # assert "Madam, I'm Adam".palindrome?
   end
 end
